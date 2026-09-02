@@ -1,0 +1,15 @@
+{
+  "name": "szepulo-szovetek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./css/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./css/output.css --watch"
+  },
+  "private": true,
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
