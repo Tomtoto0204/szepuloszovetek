@@ -53,7 +53,7 @@
 </nav>
 
 <!-- Hero Szekció -->
-<section class="bg-[url('source/hattermontazs.png')] bg-cover bg-center bg-no-repeat relative h-screen flex items-center justify-center text-left">
+<section class="bg-cover bg-center bg-no-repeat relative h-screen flex items-center justify-center text-left" style="background-image: url('./source/hattermontazs.png');">
     <div class="absolute inset-0 bg-charcoal/20"></div>
     <div class="relative z-10 w-full max-w-xl mx-4 p-8 sm:p-10 bg-[#4a4a4a]/60 backdrop-blur-md rounded-[2.5rem] shadow-2xl text-center flex flex-col items-center justify-center">
         <h1 class="text-4xl md:text-6xl font-serif text-white mb-6 drop-shadow-md">Szépülő Szövetek Stúdió</h1>
@@ -151,7 +151,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/source/talp.jpg" alt="Talpmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                            <img src="./source/talp.jpg" alt="Talpmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
                         </div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/source/sved.jpg" alt="Svédmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                            <img src="./source/sved.jpg" alt="Svédmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
                         </div>
                     </div>
                 </div>
@@ -237,7 +237,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/source/ecset.jpg" alt="Arcmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                            <img src="./source/ecset.jpg" alt="Arcmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
                         </div>
                     </div>
                 </div>
@@ -278,7 +278,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/source/gua_sha.jpg" alt="Gua Sha" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                            <img src="./source/gua_sha.jpg" alt="Gua Sha" class="w-full aspect-video object-cover rounded-xl shadow-md">
                         </div>
                     </div>
                 </div>
@@ -320,7 +320,7 @@
                             </div>
                         </div>
                         <div>
-                            <img src="/source/talp.jpg" alt="Talpmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                            <img src="./source/talp.jpg" alt="Talpmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
                         </div>
                     </div>
                 </div>
@@ -502,6 +502,19 @@
                     </ul>
                 </div>
             </div>
+            <!--Számlázás -->
+            <div class="flex gap-4">
+                <div class="flex-shrink-0 mt-1">
+                    <svg class="w-6 h-6 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium text-charcoal mb-2">Számlázás</h4>
+                    <ul class="list-disc pl-5 space-y-1 marker:text-sage">
+                        <li>A szolgáltatás igénybevételét követően a helyszínen minden esetben elektronikus számla kerül kiállításra. A hatályos jogszabályok értelmében a számla kiállításához kötelezően szükséges a vendég teljes neve, lakcíme, valamint e-mail címe. Ezen adatok hiányában – a törvényi kötelezettségek miatt – a szolgáltatás teljesítését nem áll módomban megkezdeni. Köszönöm megértését és együttműködését!
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
             <!-- Záró szöveg -->
             <div class="mt-12 p-6 bg-sand rounded-xl border border-sand-dark text-center">
@@ -516,7 +529,8 @@
 <!-- Footer -->
 <footer id="kapcsolat" class="bg-charcoal text-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+        <!-- Itt módosult a grid, hogy 4 oszlopos legyen nagy képernyőn (lg:grid-cols-4) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 text-center md:text-left">
 
             <div>
                 <span class="font-serif text-2xl font-bold text-sage-light tracking-wide mb-6 block">Szépülő Szövetek Stúdió</span>
@@ -526,7 +540,6 @@
                     a megérdemelt gondoskodást, hogy újra könnyűnek, kiegyensúlyozottnak és szépnek
                     érezhesd magad!
                 </p>
-
             </div>
 
             <div>
@@ -549,13 +562,32 @@
 
             <div>
                 <h4 class="font-serif text-lg text-white mb-6">Időpontfoglalás</h4>
-                <ul class="space-y-2 text-gray-400 text-sm font-light">
-                    <li class="flex justify-between max-w-xs mx-auto md:mx-0">
-                        <span>Telefonon és írásban:</span>
+                <ul class="space-y-4 text-gray-400 text-sm font-light">
+                    <li class="flex flex-col max-w-xs mx-auto md:mx-0">
+                        <span class="mb-1">Telefonon és írásban:</span>
+                        <span class="text-sage-light">Hétköznap: 08:00 - 18:00</span>
                     </li>
-                    <li class="flex justify-between max-w-xs mx-auto md:mx-0">
-                        <span>Hétköznap:</span>
-                        <span class="text-sage-light">08:00 - 18:00</span>
+                </ul>
+            </div>
+
+            <!-- Formázott Impresszum -->
+            <div>
+                <h4 class="font-serif text-lg text-white mb-6">Impresszum</h4>
+                <ul class="space-y-4 text-gray-400 text-sm font-light">
+                    <li class="flex flex-col max-w-xs mx-auto md:mx-0">
+                        <span class="text-white font-medium mb-1">JEGENYEI-JANKOVICS SZABINA E.V.</span>
+                    </li>
+                    <li class="flex flex-col max-w-xs mx-auto md:mx-0">
+                        <span class="text-xs text-gray-500 uppercase tracking-wider mb-0.5">Nyilvántartási szám</span>
+                        <span class="text-sage-light">62742164</span>
+                    </li>
+                    <li class="flex flex-col max-w-xs mx-auto md:mx-0">
+                        <span class="text-xs text-gray-500 uppercase tracking-wider mb-0.5">Adószám</span>
+                        <span class="text-sage-light">92324390-1-33</span>
+                    </li>
+                    <li class="flex flex-col max-w-xs mx-auto md:mx-0">
+                        <span class="text-xs text-gray-500 uppercase tracking-wider mb-0.5">Székhely</span>
+                        <span class="text-sage-light leading-relaxed">2730 Albertirsa,<br>Batthyány utca 30.</span>
                     </li>
                 </ul>
             </div>
