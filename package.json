@@ -2,10 +2,9 @@
   "name": "szepulo-szovetek",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./css/output.css --minify",
-    "dev": "tailwindcss -i ./src/input.css -o ./css/output.css --watch"
+    "build": "tailwindcss -i ./src/input.css -o ./public/css/output.css --minify"
   },
   "private": true,
   "devDependencies": {
