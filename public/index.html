@@ -344,7 +344,180 @@
                     </div>
                 </div>
             </div>
+            <!-- 6. -->
+            <div id="accordion-6" class="border border-sand-dark rounded-2xl overflow-hidden bg-sand shadow-sm">
+                <button @click="toggle(5)" class="w-full flex justify-between items-center p-6 md:p-8 bg-white hover:bg-sand transition-colors duration-200">
+                    <span class="font-serif text-xl md:text-2xl text-charcoal font-medium text-left">Reflexológiás talpmasszázs</span>
+                    <svg :class="{'rotate-180': activeAccordion === 5}" class="w-6 h-6 text-sage-dark transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="activeAccordion === 5" x-transition:enter="transition-opacity duration-150" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" style="display: none;" class="p-6 md:p-8 border-t border-sand-dark">
+                    <div class="flex flex-col gap-8">
+                        <div class="space-y-6 text-gray-700 leading-relaxed">
+                            <p><strong>A talp masszírozása nem csupán egy kellemes, kényeztető rituálé, hanem egy fantasztikus öngyógyító folyamat is. A talpon található reflexzónák ingerlésével közvetlenül hatunk a belső szervekre, serkentjük a vér- és nyirokkeringést, valamint segítünk a szervezetnek megszabadulni a felhalmozódott méreganyagoktól.</strong></p>
+                            <p>A reflexzónák olyan idegpontok, amelyek egy-egy távoli testrésszel kapcsolatban vannak. Testünk térképe a talpunkon rejtőzik. A reflexológia ősi tudományára épülő masszázs feloldja a mindennapi stressz okozta blokkokat, méregteleníti a szervezetet és új energiával tölt fel. A talp masszázsával a központi idegrendszerre, vérkeringésre, belső szervekre gyakorolhatunk hatást.</p>
+                            <div>
+                                <h4 class="font-serif text-xl text-sage-dark mb-2">Kulcsfontosságú előnyök:</h4>
+                                <ul class="list-disc pl-5 space-y-1 marker:text-sage">
+                                    <li><strong>Keringés javítása:</strong> serkenti a vér- és nyirokkeringést</li>
+                                    <li><strong>Stresszoldás:</strong> mély, idegrendszeri szintű relaxációt biztosít</li>
+                                    <li><strong>Méregtelenítés:</strong> segíti a salakanyagok és toxikus anyagok kiürülését</li>
+                                    <li><strong>Fájdalomcsillapítás:</strong> oldja az izmok feszültségét a test más részein is</li>
+                                    <li><strong>Energizálás:</strong> blokkok oldásával harmonizálja az energiaáramlást</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-red-800/80 mb-2">Mikor nem ajánlott a kezelés? (Ellenjavallatok)</h4>
+                                <ul class="list-disc pl-5 space-y-1 marker:text-red-800/50">
+                                    <li>Nyílt sebek, sérülések vagy fertőzések a lábon</li>
+                                    <li>Heveny gyulladás a visszerekben, vénákban, trombózis</li>
+                                    <li>Magas lázzal járó akut megbetegedések</li>
+                                    <li>Veseelégtelenség</li>
+                                    <li>Vérhígító gyógyszerek szedésekor</li>
+                                    <li>Súlyos cukorbetegség vagy szívbetegség</li>
+                                    <li>Veszélyeztetett terhesség</li>
+                                    <li>Daganatos megbetegedések</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./source/talp.jpg" alt="Talpmasszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Vágusz masszázs -->
+            <div id="accordion-7" class="border border-sand-dark rounded-2xl overflow-hidden bg-sand shadow-sm mt-4">
+                <button @click="toggle(6)" class="w-full flex justify-between items-center p-6 md:p-8 bg-white hover:bg-sand transition-colors duration-200">
+                    <span class="font-serif text-xl md:text-2xl text-charcoal font-medium text-left">Vágusz masszázs</span>
+                    <svg :class="{'rotate-180': activeAccordion === 6}" class="w-6 h-6 text-sage-dark transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="activeAccordion === 6" x-transition:enter="transition-opacity duration-150" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" style="display: none;" class="p-6 md:p-8 border-t border-sand-dark">
+                    <div class="flex flex-col gap-8">
+                        <div class="space-y-6 text-gray-700 leading-relaxed">
+                            <p><strong>A vágusz masszázs egy olyan gyengéd, idegrendszert nyugtató kezelés, amely azonnal csökkenti a stresszt, javítja az emésztést és visszaállítja a szervezet természetes egyensúlyát.</strong></p>
+                            <p>A vagus ideg - más néven bolygóideg - a test egyik legfontosabb idege, amely összeköti az agyat a belső szervekkel.</p>
+                            <p>A vágusz masszázs során az idegrendszer átkapcsol a regeneráló paraszimpatikus üzemmódba, amely azonnal jelzi a testnek, hogy biztonságban van és megpihenhet. Ez a váltás azért kulcsfontosságú, mert csökkenti a stresszhormonok szintjét, lassítja a pulzust, valamint aktiválja a szervezet természetes öngyógyító folyamatait, így biztosítva a pihentető alvást és a hatékony emésztést.</p>
+                            <div>
+                                <h4 class="font-serif text-xl text-sage-dark mb-2">Legfőbb jótékony hatásai:</h4>
+                                <ul class="list-disc pl-5 space-y-1 marker:text-sage">
+                                    <li>Azonnali stressz- és szorongáscsökkentés</li>
+                                    <li>A szívritmus és a vérnyomás szabályozása</li>
+                                    <li>Az emésztés támogatása</li>
+                                    <li>Mélyebb, pihentetőbb alvás biztosítása</li>
+                                    <li>A nyak, az állkapocs és a mellkas feszültségének oldása</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-red-800/80 mb-2">Mikor nem ajánlott a kezelés? (Ellenjavallatok)</h4>
+                                <ul class="list-disc pl-5 space-y-1 marker:text-red-800/50">
+                                    <li>Beültetett szívritmus-szabályozó (Pacemaker vagy ICD)</li>
+                                    <li>Súlyos keringési vagy szívritmuszavarok</li>
+                                    <li>Daganatos megbetegedések a kezelési területen</li>
+                                    <li>Akut gyulladások, láz vagy fertőzések</li>
+                                    <li>Friss nyaki műtétek, sérülések vagy bőrproblémák</li>
+                                    <li>Várandósság</li>
+                                    <li>Közvetlenül műtét után, szöveti stabilitás előtt</li>
+                                    <li>Akut (gyulladásos) emésztési problémák</li>
+                                    <li>Akut fekély vagy epekő</li>
+                                    <li>Csonttörés</li>
+                                </ul>
+                            </div>
+                        </div><!--
+                        <div>
+                            <img src="./source/vagus.jpg" alt="Vágusz masszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
 
+            <!-- Mélyszöveti masszázs -->
+            <div id="accordion-8" class="border border-sand-dark rounded-2xl overflow-hidden bg-sand shadow-sm mt-4">
+                <button @click="toggle(7)" class="w-full flex justify-between items-center p-6 md:p-8 bg-white hover:bg-sand transition-colors duration-200">
+                    <span class="font-serif text-xl md:text-2xl text-charcoal font-medium text-left">Mélyszöveti masszázs</span>
+                    <svg :class="{'rotate-180': activeAccordion === 7}" class="w-6 h-6 text-sage-dark transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="activeAccordion === 7" x-transition:enter="transition-opacity duration-150" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" style="display: none;" class="p-6 md:p-8 border-t border-sand-dark">
+                    <div class="flex flex-col gap-8">
+                        <div class="space-y-6 text-gray-700 leading-relaxed">
+                            <p><strong>A mélyszöveti masszázs egy erőteljes, terápiás kezelés, amely a felszíni simítások helyett az izmaid és a kötőszöveteid (fascia) legmélyebb rétegeit célozza meg.</strong></p>
+                            <p>A hagyományos svédmasszázzsal ellentétben itt jóval lassabb mozdulatokkal és intenzív, fókuszált nyomással dolgozom, hogy hatékonyan és végleg feloldjam a krónikus izomcsomókat és a makacs letapadásokat.</p>
+                            <div>
+                                <h4 class="font-serif text-xl text-sage-dark mb-2">Miben segít neked a mélyszöveti masszázs?</h4>
+                                <ul class="list-disc pl-5 space-y-1 marker:text-sage">
+                                    <li><strong>Megszünteti a krónikus fájdalmat:</strong> Célzottan csökkenti a makacs hát-, nyak-, váll- és derékfájást azáltal, hogy fellazítja a mélyen fekvő, merev izomrostokat.</li>
+                                    <li><strong>Feloldja a fájdalmas izomcsomókat:</strong> Hatékonyan kezeli a triggerpontokat és a szöveti letapadásokat, amelyek a mindennapi stressz vagy a túlterhelés miatt alakulnak ki.</li>
+                                    <li><strong>Helyreállítja a mozgásszabadságot:</strong> Nyújtja és rugalmassá teszi a merev kötőszövetet (fasciát), így a kezelés után sokkal könnyebb, szabadabb lesz a mozgás.</li>
+                                    <li><strong>Javítja a testtartást:</strong> Felszabadítja az ülőmunka vagy az egyoldalú terhelés miatt megrövidült, görcsös izmokat, segítve a test természetes egyensúlyának visszaállítását.</li>
+                                    <li><strong>Gyorsítja a sportolás utáni regenerációt:</strong> Serkenti a vér- és nyirokkeringést a legmélyebb szövetekben is, ami segíti a salakanyagok kiürülését és az izmok gyorsabb gyógyulását.</li>
+                                    <li><strong>Csökkenti a stressz fizikai tüneteit:</strong> Bár erőteljes kezelésről van szó, a feszültség fizikai kioldásával az elme is megkönnyebbül, csökken a stresszhormonok szintje.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-red-800/80 mb-2">Mikor nem ajánlott a kezelés? (Ellenjavallatok)</h4>
+                                <ul class="list-disc pl-5 space-y-1 marker:text-red-800/50">
+                                    <li>Lázas állapot és akut fertőzések</li>
+                                    <li>Akut gyulladások</li>
+                                    <li>Mélyvénás trombózis / trombózisveszély</li>
+                                    <li>Daganatos megbetegedések</li>
+                                    <li>Súlyos szív- és érrendszeri betegségek</li>
+                                    <li>Sérült bőrfelszín</li>
+                                    <li>Közvetlenül műtét után</li>
+                                    <li>Csontritkulás előrehaladott fázisában</li>
+                                    <li>Alkoholos vagy drogbefolyásoltság</li>
+                                    <li>Vérzékenység vagy véralvadásgátlók szedése</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--
+                        <div>
+                            <img src="./source/melyszoveti.jpg" alt="Mélyszöveti masszázs" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Viscerális mobilizáció -->
+            <div id="accordion-9" class="border border-sand-dark rounded-2xl overflow-hidden bg-sand shadow-sm mt-4">
+                <button @click="toggle(8)" class="w-full flex justify-between items-center p-6 md:p-8 bg-white hover:bg-sand transition-colors duration-200">
+                    <span class="font-serif text-xl md:text-2xl text-charcoal font-medium text-left">Viscerális mobilizáció</span>
+                    <svg :class="{'rotate-180': activeAccordion === 8}" class="w-6 h-6 text-sage-dark transition-transform duration-300 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div x-show="activeAccordion === 8" x-transition:enter="transition-opacity duration-150" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" style="display: none;" class="p-6 md:p-8 border-t border-sand-dark">
+                    <div class="flex flex-col gap-8">
+                        <div class="space-y-6 text-gray-700 leading-relaxed">
+                            <p><strong>A viscerális mobilizáció egy gyengéd manuális technika, amely a belső szervek és a rögzítő kötőszövetek feszültségeinek oldásával állítja vissza a szervek szabad mozgását.</strong></p>
+                            <p>A kezelés hatékonyan enyhíti a krónikus mozgásszervi fájdalmakat, valamint javítja az emésztést és a keringést.</p>
+                            <div>
+                                <h4 class="font-serif text-xl text-sage-dark mb-2">A viscerális mobilizáció élettani előnyei</h4>
+                                <ul class="list-disc pl-5 space-y-1 marker:text-sage">
+                                    <li><strong>Támogathatja az emésztőrendszer működését:</strong> Hatékonyan kezeli a puffadást, a krónikus székrekedést vagy hasmenést, a refluxot, a gyomorégést és az IBS (irritábilis bél szindróma) tüneteit azáltal, hogy optimalizálja a gyomor, a máj, az epe és a belek fizikai mozgásszabadságát.</li>
+                                    <li><strong>Segíti a belső szervek mikrokeringését:</strong> Serkenti a kezelt szervek vér- és nyirokkeringését, ami támogatja a méregtelenítési folyamatokat (pl. a máj és a vesék funkcióját) és javítja a sejtek tápanyagellátását.</li>
+                                    <li><strong>Támogatja a kismedencei szervek egészségét:</strong> Jótékony hatású nőgyógyászati és urológiai problémák, például fájdalmas menstruáció, endometriózis (kiegészítő terápiájaként), vagy krónikus felfázások esetén, mivel javítja a kismedencei keringést és oldja a szöveti blokkokat.</li>
+                                    <li><strong>Segít a műtét utáni letapadások (hegek) kezelésében:</strong> Császármetszés, vakbélműtét, epe- vagy egyéb hasi és kismedencei műtétek után a belső hegszövetek merevséget okozhatnak. A mobilizáció finoman fellazítja ezeket a mély letapadásokat.</li>
+                                    <li><strong>Csökkenti a stresszt és harmonizálja az idegrendszert:</strong> A hasi terület rengeteg idegvégződést tartalmaz (második agy). A szervek feszültségmentesítése közvetlenül nyugtatja a vegetatív idegrendszert, segítve a stresszoldást.</li>
+                                    <li><strong>Hozzájárulhat a krónikus mozgásszervi fájdalmak enyhítéséhez:</strong> Belső szerveink kötőszöveti szalagokkal rögzülnek a gerinchez és a medencéhez. Egy belső feszültség – például egy korábbi gyulladás vagy műtét miatti letapadás – gyakran állhat a makacs, nehezen múló hát-, derék-, nyak- vagy csípőfájdalmak hátterében. Ezen mély feszültségek gyengéd oldásával a kezelés hatékonyan segíthet a mozgásszervi panaszok megszüntetésében és a test egyensúlyának visszaállításában.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-xl text-red-800/80 mb-2">Mikor nem ajánlott a kezelés?</h4>
+                                <ul class="list-disc pl-5 space-y-1 marker:text-red-800/50">
+                                    <li>Akut hasi vagy kismedencei gyulladások, fertőzések</li>
+                                    <li>Rosszindulatú vagy áttétes daganatos megbetegedések</li>
+                                    <li>Friss hasi vagy kismedencei műtétek és sérülések</li>
+                                    <li>Vérzékenység, belső vérzések vagy friss trombózis</li>
+                                    <li>Várandósság</li>
+                                    <li>Nőgyógyászati spirál</li>
+                                    <li>Lázas állapotok és akut fertőzések</li>
+                                    <li>Alkoholos vagy drogbefolyásoltság</li>
+                                </ul>
+                            </div>
+                        </div><!--
+                        <div>
+                            <img src="./source/visceralis.jpg" alt="Viscerális mobilizáció" class="w-full aspect-video object-cover rounded-xl shadow-md">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -360,67 +533,101 @@
         <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
             <div class="divide-y divide-gray-100">
                 <!-- Hegintegráció -->
-                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors">
-                    <div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
                         <h4 class="font-medium text-lg text-charcoal">Hegintegráció – Fájdalommentes hegkezelés</h4>
                         <p class="text-sm text-gray-500">Konzultáció + kezelés (első találkozás alkalmával) - 75 perc</p>
                     </div>
-                    <div class="text-xl font-serif text-sage-dark">18.000 Ft</div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">18.000 Ft</div>
                 </div>
-                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors">
-                    <div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
                         <h4 class="font-medium text-lg text-charcoal">Hegintegráció Kezelés</h4>
                         <p class="text-sm text-gray-500">50-55 perc</p>
                     </div>
-                    <div class="text-xl font-serif text-sage-dark">15.000 Ft</div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">15.000 Ft</div>
                 </div>
 
                 <!-- Svédmasszázs -->
-                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors">
-                    <div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
                         <h4 class="font-medium text-lg text-charcoal">Svédmasszázs</h4>
                         <p class="text-sm text-gray-500">60 perc</p>
                     </div>
-                    <div class="text-xl font-serif text-sage-dark">12.000 Ft</div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">12.000 Ft</div>
                 </div>
-                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors">
-                    <div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
                         <h4 class="font-medium text-lg text-charcoal">Svédmasszázs</h4>
                         <p class="text-sm text-gray-500">30 perc</p>
                     </div>
-                    <div class="text-xl font-serif text-sage-dark">7.500 Ft</div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">7.500 Ft</div>
                 </div>
 
                 <!-- Arcmasszázsok -->
-                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors">
-                    <div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
                         <h4 class="font-medium text-lg text-charcoal">Prémium arcmasszázs</h4>
                         <p class="text-sm text-gray-500">Legyezőecsetes + Gua sha köves arcmasszázs - 70 perc</p>
                     </div>
-                    <div class="text-xl font-serif text-sage-dark">13.000 Ft</div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">13.000 Ft</div>
                 </div>
-                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors">
-                    <div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
                         <h4 class="font-medium text-lg text-charcoal">Legyezőecsetes arcmasszázs</h4>
                         <p class="text-sm text-gray-500">35 perc</p>
                     </div>
-                    <div class="text-xl font-serif text-sage-dark">6.500 Ft</div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">6.500 Ft</div>
                 </div>
-                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors">
-                    <div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
                         <h4 class="font-medium text-lg text-charcoal">Gua Sha köves arcmasszázs</h4>
                         <p class="text-sm text-gray-500">45 perc</p>
                     </div>
-                    <div class="text-xl font-serif text-sage-dark">7.500 Ft</div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">7.500 Ft</div>
                 </div>
 
                 <!-- Talpmasszázs -->
-                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors">
-                    <div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
                         <h4 class="font-medium text-lg text-charcoal">Reflexzónás talpmasszázs</h4>
                         <p class="text-sm text-gray-500">45 perc</p>
                     </div>
-                    <div class="text-xl font-serif text-sage-dark">10.000 Ft</div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">10.000 Ft</div>
+                </div>
+
+                <!-- Mélyszöveti masszázs-->
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
+                        <h4 class="font-medium text-lg text-charcoal">Mélyszöveti masszázs</h4>
+                        <p class="text-sm text-gray-500">Teljes test - 60 perc</p>
+                    </div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">12.000 Ft</div>
+                </div>
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
+                        <h4 class="font-medium text-lg text-charcoal">Mélyszöveti masszázs + kezelés</h4>
+                        <p class="text-sm text-gray-500">A fájdalmas terület és hozzá kapcsolódó funkciónális lánc kezelése - 60 perc</p>
+                    </div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">12.000 Ft</div>
+                </div>
+
+                <!--Végusz masszázs-->
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
+                        <h4 class="font-medium text-lg text-charcoal">Vágusz masszázs</h4>
+                        <p class="text-sm text-gray-500">30 perc</p>
+                    </div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">6.000 Ft</div>
+                </div>
+
+                <!--Visceralis mobilizáció-->
+                <div class="flex justify-between items-center p-6 hover:bg-gray-50 transition-colors gap-4">
+                    <div class="flex-1">
+                        <h4 class="font-medium text-lg text-charcoal">Visceralis mobilizáció</h4>
+                        <p class="text-sm text-gray-500">50 perc</p>
+                    </div>
+                    <div class="text-xl font-serif text-sage-dark whitespace-nowrap flex-shrink-0">8.000 Ft</div>
                 </div>
             </div>
         </div>
